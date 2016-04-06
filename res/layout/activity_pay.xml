@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <EditText
+        android:id="@+id/pay_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="收款人储蓄卡号："
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/pay_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_account"
+        android:layout_marginTop="10dp"
+        android:hint="开户姓名："
+        android:maxLength="5" />
+
+    <EditText
+        android:id="@+id/pay_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_name"
+        android:layout_marginTop="10dp"
+        android:hint="转账金额："
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/pay_ok"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pay_amount"
+        android:layout_marginTop="15dp"
+        android:background="#052e67"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

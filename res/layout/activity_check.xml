@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/checkTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="验证码"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/checkTest"
+        android:layout_alignRight="@id/checkTest"
+        android:layout_below="@id/checkTest"
+        android:layout_marginTop="30dp"
+        android:text="亲爱的用户：\n\n请将4位验证码填在上面" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@id/textView1"
+        android:layout_below="@id/textView1"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
+        android:background="#052e67"
+        android:text="下一步"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/ref"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/textView1"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:background="#052e67"
+        android:text="重新获取"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <com.TopBang.vPaypal.CheckView
+        android:id="@+id/checkView"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp" 
+        android:layout_centerHorizontal="true">
+    </com.TopBang.vPaypal.CheckView>
+
+</RelativeLayout>

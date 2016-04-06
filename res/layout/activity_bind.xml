@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <EditText
+        android:id="@+id/bind_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="储蓄卡号："
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/bind_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bind_account"
+        android:layout_marginTop="10dp"
+        android:hint="户名："
+        android:maxLength="5" />
+
+    <EditText
+        android:id="@+id/bind_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bind_name"
+        android:layout_marginTop="10dp"
+        android:hint="储蓄卡密码："
+        android:inputType="number"
+        android:password="true"
+        android:maxLength="6" />
+
+    <EditText
+        android:id="@+id/bind_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bind_password"
+        android:layout_marginTop="10dp"
+        android:hint="身份证号："
+        android:inputType="number" 
+        android:maxLength="18" />
+
+    <Button
+        android:id="@+id/bind_ok"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/bind_id"
+        android:layout_below="@+id/bind_id"
+        android:layout_marginTop="28dp"
+        android:background="#052e67"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

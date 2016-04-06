@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/manage_background" >
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:background="#434343"
+        android:text="历史转帐记录"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/history"
+        android:background="#434343"
+        android:text="删除历史记录"
+        android:textColor="#FFFFFF"
+        android:gravity="center"  />
+
+    <Button
+        android:id="@+id/remind"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/delete"
+        android:background="#434343"
+        android:text="提醒"
+        android:textColor="#FFFFFF"
+        android:gravity="center"  />
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/manage_back" />
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="#1b1b1b"
+        android:text="注销登陆"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
